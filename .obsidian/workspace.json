@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "62cd5b7aeabb386e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3eb1a7643c3120f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84133d7497688cd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GitWiki/Основные команды и способы работы с локальным Git/Пример работы с Git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Пример работы с Git"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c9bfc40b849e41e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d295b0eb3b039e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bec00bcfbeb8a5d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "a50c4ebb8592f468",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "d0b4f9fb67675740",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "59d10b3b0bb28d88",
+    "type": "split",
+    "children": [
+      {
+        "id": "13127b6742042a9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eab1bf55764d208a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "GitWiki/Основные команды и способы работы с локальным Git/Пример работы с Git.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Пример работы с Git"
+            }
+          },
+          {
+            "id": "a0777ed9a191ca37",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "GitWiki/Основные команды и способы работы с локальным Git/Пример работы с Git.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Пример работы с Git"
+            }
+          },
+          {
+            "id": "20bbff17c10b481f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "ba8a43933231194c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "GitWiki/Основные команды и способы работы с локальным Git/Пример работы с Git.md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура Пример работы с Git"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "84133d7497688cd3",
+  "lastOpenFiles": [
+    "{BB30192C-6AF3-4647-91C1-244BF29FE133}.png",
+    "{2A610A79-7414-48EB-B92D-49DF593FF849}.png",
+    "{7E59E0FD-09AC-424C-AE96-D4F01A12CAB5}.png",
+    "{66F66793-D064-4411-9EA0-00F9446352F0}.png",
+    "{28FBAF21-927E-4101-B4FA-F0EF62AE599C}.png",
+    "GitWiki/Основные команды и способы работы с локальным Git/Исходники_Пример_работы/{5E2F02B7-D558-4EA3-9CA6-779269660AC5}.png",
+    "GitWiki/Основные команды и способы работы с локальным Git/Пример работы с Git.md",
+    "GitWiki/Основные команды и способы работы с локальным Git/Исходники_Пример_работы/{538646B1-6EA8-4DF8-BAF6-F7C616649664}.png",
+    "GitWiki/Основные команды и способы работы с локальным Git/Исходники_Пример_работы/{C9890FFB-F35C-4F91-A865-51F075EADA90}.png",
+    "GitWiki/Основные команды и способы работы с локальным Git/Исходники_Пример_работы/{97B42DEB-1B7A-4750-B9B2-5DEC1DC5415B}.png",
+    "GitWiki/Основные команды и способы работы с локальным Git/Исходники_Пример_работы/{4B4F2A4C-994B-4CFB-BE41-77EA56082654}.png",
+    "GitWiki/Основные команды и способы работы с локальным Git/Исходники_Пример_работы/{3975B907-EF1E-4A13-AE29-66D4BD58312E}.png",
+    "GitWiki/Скачивание и установка Git.md",
+    "GitWiki/Основные команды и способы работы с локальным Git/Основные команды и способы работы с локальным Git.md",
+    "GitWiki/Основные команды и способы работы с локальным Git/Исходники_Пример_работы",
+    "GitWiki/Основные команды и способы работы с локальным Git",
+    "README.md"
+  ]
+}
