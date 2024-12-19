@@ -1,34 +1,11 @@
 ## 1. Начальная настройка и клонирование
 
 ```bash
-# Проверяем текущие настройки Git
-git config --list
-```
-На фото должны быть видны настройки:
-```
-user.name=Your Name
-user.email=your.email@example.com
-core.editor=vim
-color.ui=auto
-```
-
-```bash
-# Настраиваем имя пользователя и email, если еще не настроены
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-
 # Клонируем репозиторий
 git clone https://github.com/username/repository.git
 ```
-На фото должен быть виден процесс клонирования:
-```
-Cloning into 'repository'...
-remote: Counting objects: 100, done.
-remote: Compressing objects: 100% (80/80), done.
-remote: Total 100 (delta 20), reused 90 (delta 10)
-Receiving objects: 100% (100/100), 10.5 KiB | 5.24 MiB/s, done.
-Resolving deltas: 100% (20/20), done.
-```
+
+![[{DA4A87B1-F7A8-4C74-9998-4D34A1FDD74F}.png]]
 
 ```bash
 # Переходим в директорию проекта
@@ -37,42 +14,9 @@ cd repository
 # Проверяем статус репозитория
 git status
 ```
-На фото должен быть виден чистый статус:
-```
-On branch main
-Your branch is up to date with 'origin/main'.
 
-nothing to commit, working tree clean
-```
-
-## 2. Работа с удаленными репозиториями
-
-```bash
-# Проверяем настроенные удаленные репозитории
-git remote -v
-```
-На фото должен быть виден origin:
-```
-origin  https://github.com/username/repository.git (fetch)
-origin  https://github.com/username/repository.git (push)
-```
-
-```bash
-# Добавляем дополнительный удаленный репозиторий
-git remote add upstream https://github.com/original-owner/repository.git
-
-# Проверяем обновленный список удаленных репозиториев
-git remote -v
-```
-На фото должны быть видны оба репозитория:
-```
-origin    https://github.com/username/repository.git (fetch)
-origin    https://github.com/username/repository.git (push)
-upstream  https://github.com/original-owner/repository.git (fetch)
-upstream  https://github.com/original-owner/repository.git (push)
-```
-
-## 3. Создание новой ветки и внесение изменений
+![[{C7BDE752-AC17-4B98-9AC8-8392A290ECEB}.png]]
+## 2. Создание новой ветки и внесение изменений
 
 ```bash
 # Создаем новую ветку для работы
@@ -81,11 +25,8 @@ git checkout -b feature/new-feature
 # Проверяем, что мы находимся в новой ветке
 git branch
 ```
-На фото должен быть виден список веток:
-```
-  main
-* feature/new-feature
-```
+
+![[{E60BF739-ECD2-4807-8FB7-6B8701218047}.png]]
 
 ```bash
 # Вносим изменения в файлы
@@ -94,16 +35,8 @@ echo "New feature code" > feature.txt
 # Проверяем статус изменений
 git status
 ```
-На фото должен быть виден статус с новым файлом:
-```
-On branch feature/new-feature
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        feature.txt
 
-nothing added to commit but untracked files present
-```
-
+![[{EC504ABA-ED48-424E-BF8C-F78375620B12}.png]]
 ## 4. Фиксация изменений
 
 ```bash
@@ -116,12 +49,8 @@ git commit -m "feat: добавлен новый функционал"
 # Проверяем лог
 git log --oneline
 ```
-На фото должна быть видна история коммитов:
-```
-a1b2c3d feat: добавлен новый функционал
-e4f5g6h Initial commit
-```
 
+![[{8465798C-7783-4C17-BB27-A4E9051C206D}.png]]
 ## 5. Синхронизация с удаленным репозиторием
 
 ```bash
@@ -131,11 +60,8 @@ git fetch origin
 # Проверяем наличие новых изменений
 git log HEAD..origin/main --oneline
 ```
-На фото должны быть видны новые коммиты (если есть):
-```
-b2c3d4e fix: исправление бага в основной ветке
-c3d4e5f docs: обновление документации
-```
+
+![[{BEAE9F2A-D219-4712-A625-B3F5A3DC0952}.png]]
 
 ```bash
 # Обновляем основную ветку
@@ -145,34 +71,16 @@ git pull origin main
 # Возвращаемся в ветку с функционалом
 git checkout feature/new-feature
 ```
-На фото должен быть виден процесс обновления:
-```
-Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
-Updating e4f5g6h..c3d4e5f
-Fast-forward
- docs/README.md | 2 ++
- 1 file changed, 2 insertions(+)
-Switched to branch 'feature/new-feature'
-```
 
+![[{BDA9C12B-8093-4ED3-98B4-DEDC717F739D}.png]]
 ## 6. Отправка изменений в удаленный репозиторий
 
 ```bash
 # Отправляем новую ветку в удаленный репозиторий
 git push -u origin feature/new-feature
 ```
-На фото должен быть виден результат отправки:
-```
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-remote: 
-remote: Create a pull request for 'feature/new-feature' on GitHub by visiting:
-remote:      https://github.com/username/repository/pull/new/feature/new-feature
-remote: 
-To https://github.com/username/repository.git
- * [new branch]      feature/new-feature -> feature/new-feature
-Branch 'feature/new-feature' set up to track remote branch 'feature/new-feature' from 'origin'.
-```
+
+![[{580CAABA-AB1A-4FEE-8DAE-BD3A540B1068}.png]]
 
 ## 7. После создания Pull Request
 
@@ -187,18 +95,8 @@ git commit -m "fix: внесены правки по результатам code
 # Отправляем обновления
 git push origin feature/new-feature
 ```
-На фото должен быть виден результат отправки изменений:
-```
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/username/repository.git
-   a1b2c3d..d4e5f6g  feature/new-feature -> feature/new-feature
-```
+
+![[{B35B9023-6EC6-4CEB-A453-F9ABC1B98E6F}.png]]
 
 ## 8. Разрешение конфликтов
 
@@ -206,26 +104,15 @@ To https://github.com/username/repository.git
 # Пытаемся слить изменения из main
 git merge main
 ```
-На фото должно быть видно сообщение о конфликте:
-```
-Auto-merging feature.txt
-CONFLICT (content): Merge conflict in feature.txt
-Automatic merge failed; fix conflicts and then commit the result.
-```
+
+![[{FFC2777B-7109-499B-B8E8-E8FC02C8AAC2}.png]]
 
 ```bash
 # Открываем конфликтующий файл
 cat feature.txt
 ```
-На фото должен быть виден конфликт в файле:
-```
-<<<<<<< HEAD
-New feature code
-Additional changes
-=======
-Different changes from main
->>>>>>> main
-```
+
+![[{5EBA5233-8DC5-4630-8625-03FD09919079}.png]]
 
 ```bash
 # После решения конфликта
@@ -233,13 +120,8 @@ git add feature.txt
 git commit -m "resolve: разрешение конфликта слияния"
 git push origin feature/new-feature
 ```
-На фото должен быть виден успешный результат:
-```
-[feature/new-feature h5i6j7k] resolve: разрешение конфликта слияния
- 1 file changed, 2 insertions(+), 1 deletion(-)
-To https://github.com/username/repository.git
-   d4e5f6g..h5i6j7k  feature/new-feature -> feature/new-feature
-```
+
+![[{A3E4847F-1DC9-495D-923F-B89624CE0027}.png]]
 
 ## 9. Завершение работы
 
@@ -250,15 +132,8 @@ git pull origin main
 git branch -d feature/new-feature
 git push origin --delete feature/new-feature
 ```
-На фото должен быть виден результат очистки:
-```
-Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
-Already up to date.
-Deleted branch feature/new-feature (was h5i6j7k).
-To https://github.com/username/repository.git
- - [deleted]         feature/new-feature
-```
+
+![[{7D46380F-19A2-4FDB-9102-F0FD242060CB}.png]]
 
 ## 10. Итоговое состояние
 
@@ -266,18 +141,4 @@ To https://github.com/username/repository.git
 # Проверяем статус и историю
 git status
 git log --oneline --graph
-```
-На фото должен быть виден чистый статус и история с влитыми изменениями:
-```
-On branch main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-
-* h5i6j7k (HEAD -> main) resolve: разрешение конфликта слияния
-|\
-| * d4e5f6g fix: внесены правки по результатам code review
-| * a1b2c3d feat: добавлен новый функционал
-|/
-* e4f5g6h Initial commit
 ```
