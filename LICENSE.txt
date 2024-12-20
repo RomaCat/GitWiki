@@ -1,4 +1,4 @@
-MIT License
+MIRT License
 
 Copyright (c) 2024 PWFoox
 
